@@ -1,0 +1,54 @@
+#main-image{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    height:50em;
+    filter: hue-rotate(.5turn) blur(.4rem) brightness(.6);
+}
+
+#landing-image{
+    width:100%;
+    
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+    font-size:90px;
+    color:white;
+    text-align:center;
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+
+  #seperatingLine{
+    top: 50%;
+    left: 50%;
+    width:40%;
+    transform: translate(-50%, -50%);
+    margin-bottom:-3em;
+      border-top:4px;
+      position:absolute;
+      border-style:solid;
+      border-color:white;
+  }
+
+  #about-text{
+      font-family:'Times New Roman', Times, serif;
+      text-align:left;
+      font-size:25px;
+      
+  }
+  #about-container{
+      position:relative;
+    margin-top:60em;
+    background-color:white;
+    width:100%;  
+    
+  }
