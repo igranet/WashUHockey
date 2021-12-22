@@ -1,0 +1,9 @@
+{
+	"trailingComma": "es5",
+	"tabWidth": 4,
+	"bracketSpacing": true,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true,
+	"jsxBracketSameLine": true
+}
