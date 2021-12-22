@@ -23,7 +23,7 @@ if (text.redirect !== "/roster") {
     <>
     
   <button 
-  className="py-2 bg-red-500 mx-1 text-sm cursor-pointer hover:bg-red-800 px-8 text-white duration-200 rounded-sm" 
+  className="md:py-2 bg-red-500 mx-1 text-sm cursor-pointer hover:bg-red-800 md:px-8 px-2 text-white duration-200 rounded-sm" 
   
   onClick={(()=>{window.location = text?.redirect})}>{text?.title}
   
