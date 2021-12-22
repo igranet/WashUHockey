@@ -23,14 +23,14 @@ const App = ()=> {
 
   <Switch>
     <Route exact path="/" page={"home"} component={homePage} />
-    <Route exact path="/roster" page={"home"} component={rosterPage} />
-    <Route exact path="/about" page={"home"} component={AboutPage} />
-    <Route exact path="/facilities" page={"home"} component={FacilitiesPage} />
-    <Route exact path="/schedule" page={"home"} component={TicketsPage} />
-    <Route exact path="/coaches" page={"home"} component={CoachesPage} />
-    <Route exact path="/contact" page={"home"} component={ContactPage} />
-    <Route exact path="/contact/recruitment" page={"home"} component={RecruitContact} />
-    <Route exact path="/contact/other" page={"home"} component={ContactDirect} />
+    <Route exact path="/roster" page={"Roster"} component={rosterPage} />
+    <Route exact path="/about" page={"About"} component={AboutPage} />
+    <Route exact path="/facilities" page={"Facilities"} component={FacilitiesPage} />
+    <Route exact path="/schedule" page={"Schedule"} component={TicketsPage} />
+    <Route exact path="/coaches" page={"Coaches"} component={CoachesPage} />
+    <Route exact path="/contact" page={"Contact"} component={ContactPage} />
+    <Route exact path="/contact/recruitment" page={"Recruitment"} component={RecruitContact} />
+    <Route exact path="/contact/other" page={"Other"} component={ContactDirect} />
     <Redirect to="/" /> {/* Path not matched */}
   </Switch>
 </Router>
