@@ -15,14 +15,14 @@ const NavBar = ({ match  }) => {
 
     return ( 
         <>
-    <div className="fixed w-full bg-white border-b-2 border-gray-200 h-16  z-20">
+    <div className="fixed w-full bg-white border-b-2 border-gray-200 h-16 z-20">
         <div className="flex">
-       <div className="md:flex md:visible invisble w-full my-auto">
+       <div className="md:flex md:visible invisble md:w-full my-auto">
             <img src={bearLogo} className="md:visible invisible w-16 h-16 ml-8"></img>
              <p className="md:visible invisible text-3xl mt-4 font-bold text-red-600">Bears Hockey</p>
            
         </div> 
-           <div className="mt-2 text-center md:relative absolute my-auto md:mr-8 mr-6 md:flex flex mx-auto" >
+           <div className="mt-2 text-center md:relative absolute my-auto md:mr-8 mr-3 md:flex flex mx-auto" >
                     {
                         pages.map((item)=>{
                             return <NavOption text={item}></NavOption>

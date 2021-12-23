@@ -15,7 +15,7 @@ const HomePageBox = ({ pic, text, link }) => {
         className="rounded-md h-1/3 flex 
         border-opacity-100 border-t-4 
         hover:border-gray-600 mt-20 hover:border-4 
-        border-red-600 w-1/3 ml-3 mr-3 mx-auto 
+        border-red-600 md:w-1/3 w-full ml-3 mr-3 mx-auto 
         relative z-50 duration-200 cursor-pointer duration-1000">
             <img src={pic} className={hoverIng ? "rounded-b-sm relative opacity-40 duration-1000": "rounded-b-sm relative opacity-100 duration-1000"}></img>
     <div className="absolute flex w-full text-center">

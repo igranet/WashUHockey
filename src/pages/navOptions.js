@@ -37,7 +37,7 @@ if (text.redirect !== "/roster") {
     <>
       <div onMouseLeave={(()=>{setHovered(false)})} onMouseEnter={(()=>{setHovered(true)})}>
       <button 
-      className="py-2 bg-red-500 mx-1 text-sm cursor-pointer hover:bg-red-800 px-8 text-white duration-200 rounded-sm" 
+      className="py-2 bg-red-500 mx-1 text-sm cursor-pointer hover:bg-red-800  px-4 md:px-8 text-white duration-200 rounded-sm" 
       onClick={(()=>{window.location = text?.redirect})}>{text?.title}
       </button>
       {isHovered ? (<HoverMenu menu = {menu} setHovered = {setHovered}></HoverMenu>):null}

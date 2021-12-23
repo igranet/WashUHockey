@@ -23,9 +23,9 @@ const HomePage = ({ match }) => {
 			<NavBar></NavBar>
 
 			<div className="w-full h-screen bg-gray-200 z-10">
-				<div className="w-full h-5/6 z-10 absolute">
+				<div className="w-full md:h-5/6 h-2/3 z-10 absolute">
 					<div className="bg-gray-300 bg-opacity-0 w-2/3 mx-auto rounded-lg">
-                        <p className="py-4 bg-opacity-20 text-6xl font-light text-opacity-90 text-gray-900 font-sans text-center mt-24 font-medium pb-4">
+                        <p className="py-4 bg-opacity-20 md:text-6xl text-3xl font-light text-opacity-90 text-gray-900 font-sans text-center mt-24 font-medium pb-4">
 							Washington University St. Louis
 						</p>
                         <img classname="w-2" src={BearPicTwo}></img>
@@ -40,9 +40,9 @@ const HomePage = ({ match }) => {
 					{' '}
 				</div>
 				<img
-					className="w-full h-5/6 z-0 border-red-100"
+					className="w-full md:h-5/6 h-1/2 z-0 border-red-100"
 					src={teamPic}></img>
-				<div className="w-full mx-auto flex flex-rows -mt-28 px-12">
+				<div className="w-full mx-auto md:flex md:flex-rows flex-cols -mt-28 md:px-12 px-4">
 					<HomePageBox
 						pic={RecruitPic}
 						text="Recruiting"
