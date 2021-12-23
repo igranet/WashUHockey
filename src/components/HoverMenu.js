@@ -10,7 +10,7 @@ const HoverMenu = ({ menu, setHovered  }) => {
         <div 
         onMouseEnter={(()=>{setHovered(true)})} 
         onMouseLeave={(()=>{setHovered(false)})} 
-        className=" mt-5 rounded-xl z-50 flex flex-col absolute left-52 top-4">
+        className=" mt-5 rounded-xl z-50 flex flex-col absolute md:left-52 left-24 top-4">
             <div className="flex flex-col rounded-xsm">
             {menu.map((item)=>{
                 console.log("item", item)

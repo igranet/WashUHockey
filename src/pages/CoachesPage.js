@@ -18,16 +18,16 @@ const CoachesPage = ({ match }) => {
 					<p className="text-4xl pt-24 w-1/4 px-24 font-semibold">
 						Coaches.
 					</p>
-					<p className="px-24 w-2/3">
+					<p className="px-24 md:w-2/3 w-full">
 						We are thankful to welcome a wonderful group of Coaches
 						and staff in for our 2021-2022 season. The Washington
 						University Ice Hockey team head Coach is Chris
 						Nikonovich.
 					</p>
-					<div className="flex mt-12 w-2/3 mx-auto">
+					<div className="md:flex flex md:flex-row flex-col mt-12 w-2/3 mx-auto">
 						<img
 							src={NikoShot}
-							className="rounded-full w-1/6 border-4 border-black"></img>
+							className="rounded-full w-2/3 md:w-1/6 border-4 border-black"></img>
 						<div className="ml-4">
 							<p className="text-2xl">Christopher Nikonivich</p>
 							<p className="font-bold text-xl">Head Coach</p>
@@ -45,10 +45,10 @@ const CoachesPage = ({ match }) => {
 							</p>
 						</div>
 					</div>
-					<div className="flex mt-12 w-2/3 mx-auto">
+					<div className="md:flex flex md:flex-row flex-col mt-12 w-2/3 mx-auto">
 						<img
 							src={SeanShot}
-							className="rounded-full w-1/6 border-4 border-black"></img>
+							className="rounded-full w-2/3 md:w-1/6 border-4 border-black"></img>
 						<div className="ml-4">
 							<p className="text-2xl">Sean Daley</p>
 							<p className="font-bold text-xl">
@@ -64,10 +64,10 @@ const CoachesPage = ({ match }) => {
 							</p>
 						</div>
 					</div>
-					<div className="flex mt-12 w-2/3 mx-auto">
+					<div className="md:flex flex md:flex-row flex-col mt-12 w-2/3 mx-auto">
 						<img
 							src={StephShot}
-							className="rounded-full w-1/6 h-1/4 border-4 border-black"></img>
+							className="rounded-full w-2/3 md:w-1/6 h-1/4 border-4 border-black"></img>
 						<div className="ml-4">
 							<p className="text-2xl">Stephan Meyer</p>
 							<p className="font-bold text-xl">
@@ -84,10 +84,10 @@ const CoachesPage = ({ match }) => {
 							</p>
 						</div>
 					</div>
-					<div className="flex mt-12 w-2/3 mx-auto">
+					<div className="md:flex flex md:flex-row flex-col mt-12 w-2/3 mx-auto">
 						<img
 							src={GegShot}
-							className="rounded-full w-1/6 border-4 border-black"></img>
+							className="rounded-full w-2/3 md:w-1/6 border-4 border-black"></img>
 						<div className="ml-4">
 							<p className="text-2xl">Greg Gajewski</p>
 							<p className="font-bold text-xl">General Manager</p>

@@ -5,7 +5,7 @@ const RecruitForm = ({ match  }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
   console.log(errors);
-  const textInput = "my-4 px-4 py-2 w-2/3 mx-auto rounded-lg text-2xl"
+  const textInput = "my-4 px-4 py-2 md:w-2/3 w-full mx-auto rounded-lg text-2xl"
   return (
     <form action="https://formspree.io/f/mqknkvvj" method="POST" className="overflow-scroll">
       
@@ -64,7 +64,8 @@ const RecruitForm = ({ match  }) => {
       </select>
       <textarea placeholder="Tell us a bit about yourself..." className="form-control
         block
-        w-2/3
+        md:w-2/3
+        w-full
         mx-auto
         mt-6
         px-3

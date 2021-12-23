@@ -42,7 +42,7 @@ const HomePage = ({ match }) => {
 				<img
 					className="w-full md:h-5/6 h-1/2 z-0 border-red-100"
 					src={teamPic}></img>
-				<div className="w-full mx-auto md:flex md:flex-rows flex-cols -mt-28 md:px-12 px-4">
+				<div className="z-10 w-full mx-auto md:flex md:flex-rows flex-cols -mt-28 md:px-12 px-4">
 					<HomePageBox
 						pic={RecruitPic}
 						text="Recruiting"
@@ -64,7 +64,7 @@ const HomePage = ({ match }) => {
                     
                 </div>
 				<footer className=" h-18 bg-gray-700 mt-24 border-t-2 border-black flex flex-col">
-					<div className="pt-2 w-full text-center text-xl font-medium space-x-24 text-white cursor-pointer ">
+					<div className="pt-2 w-full text-center text-xl font-medium md:space-x-24 space-x-12 text-white cursor-pointer ">
 						<span className="hover:text-red-400 duration-500" onClick={(()=>{window.location = "/contact/"})}>
 							Contact.
 						</span>
