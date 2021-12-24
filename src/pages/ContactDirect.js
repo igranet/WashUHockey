@@ -19,20 +19,20 @@ const ContactDirect = ({ match }) => {
 					<p> Need to get in touch with us? Fill out the below!</p>
 				</div>
 
-				<div className="ml-72 w-2/3 mx-auto mt-24 text-4xl text-center font-semibold overflow-scroll flex ">
+				<div className="md:ml-72 w-2/3 mx-auto mt-24 text-4xl text-center font-semibold overflow-scroll flex ">
 					<form
 						className="mx-auto"
 						action="https://formspree.io/f/mqknkvvj"
 						method="POST">
 						<input
 							name="lastname"
-							className="px-4 border-gray-400 border-2 w-1/3 rounded-lg mr-2 placeholder:text-md"
+							className="px-4 border-gray-400 border-2 w-1/2 md:w-1/3 rounded-lg mr-2 md:placeholder:text-sm placeholder:text-2xl"
 							type="text"
 							placeholder="First Name"></input>
 						<input
 							type="text"
 							name="firstname"
-							className="w-1/3 px-4 border-gray-400 border-2 rounded-lg"
+							className="md:w-1/3 w-1/2 px-4 border-gray-400 border-2 rounded-lg"
 							placeholder="Last Name"></input>
 						<input
 							type="text"
@@ -70,30 +70,13 @@ const ContactDirect = ({ match }) => {
 				</div>
 			</div>
 			{/* <FooterBar></FooterBar> */}
-			<footer className="h-18 bg-gray-700 mt-24 border-t-2 border-black flex flex-col absolute bottom-0 w-full">
-				<div className="pt-2 w-full text-center text-xl font-medium space-x-24 text-white cursor-pointer ">
-					<span
-						className="hover:text-red-400 duration-500"
-						onClick={() => {
-							window.location = '/contact/';
-						}}>
-						Contact.
-					</span>
-					<span
-						className="hover:text-red-400 duration-500"
-						onClick={() => {
-							window.location = '/about';
-						}}>
-						About.
-					</span>
-					<span className="hover:text-red-400 duration-500">
-						Sponsor.
-					</span>
-				</div>
-				<div className="pt-4 text-center w-full text-gray-200 font-light align-text-bottom h-full my-auto">
-					Copyright WashU Hockey 2022
-				</div>
-			</footer>
+			<footer className=" h-18 bg-gray-700 mt-24 border-t-2 border-black flex flex-col absolute w-full">
+               <div className="pt-2 w-full text-center text-xl font-medium md:space-x-24 space-x-12 text-white cursor-pointer ">
+                   <span className="hover:text-red-400 duration-500" onClick={(()=>{window.location = "/contact"})}>Contact.</span> 
+                   <span className="hover:text-red-400 duration-500" onClick={(()=>{window.location = "/about"})}>About.</span>
+                    <span className="hover:text-red-400 duration-500">Sponsor.</span></div>
+               <div className="pt-4 text-center w-full text-gray-200 font-light align-text-bottom h-full my-auto">Copyright WashU Hockey 2022</div>
+    </footer>
 		</>
 	);
 };

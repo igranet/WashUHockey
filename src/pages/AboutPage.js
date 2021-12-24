@@ -8,6 +8,7 @@ import achalogo from '../assets/achalogo.png';
 import wucrest from '../assets/wucrest.png';
 import wuabout from '../assets/wuabout.png';
 import MACHA from '../assets/macha.png';
+
 const AboutPage = ({ match }) => {
 	return (
 		<>
@@ -24,7 +25,7 @@ const AboutPage = ({ match }) => {
 						className="w-full md:h-1/2 h-1/4 z-0 absolute"
 						src={wuabout}></img>
 				</div>
-				<div className="width-full h-screen flex mx-auto">
+				<div className="width-full h-screen flex flex-col mx-auto">
 					<div className="w-2/3 mx-auto ">
 						<p className="text-black font-bold text-5xl z-10">
 							About.
@@ -146,8 +147,12 @@ const AboutPage = ({ match }) => {
 						<p>Sam Humphreys, A, #43</p>
 						<p className="mt-12">.</p>
 					</div>
+                    <img className="mx-auto w-12 -0 -mb-12 -mt-4 pb-4h" src={wucrest}></img>
 				</div>
+                
 			</div>
+
+            
 		</>
 	);
 };
